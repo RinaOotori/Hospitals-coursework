@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Forms\TablePosts.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\TableHospitals.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\TableDiagnoses.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\TableDepartments.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\TableDoctors.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\TablePatients.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\TableBaseForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Forms\Report.cs">
+        <SubType>Form</SubType>
+      </Compile>
+    </ItemGroup>
+
+</Project>
